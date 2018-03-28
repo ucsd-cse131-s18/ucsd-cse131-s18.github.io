@@ -1,0 +1,7 @@
+safe: true
+title: "Compiler Construction – CSE 131 S18"
+source: .
+destination: _site
+lsi: false
+url: "https://ucsd-cse131-s18.github.io/"
+:pygments: true
