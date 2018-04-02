@@ -1,11 +1,5 @@
-# ucsd-cse131-s18.github.io
+# ucsd-cse12-w17.github.io
+Course web site
+## Lecture notes links:
+https://ucsd-cse12-w17.github.io/lectures/04-02-mon/notes.html
 
-Visit https://ucsd-cse131-s18.github.io/ for the actual site.
-
-Built using Jekyll. Course staff: You can install Jekyll and use
-
-```
-$ jekyll serve
-```
-
-to get a local running copy that you can develop on.
