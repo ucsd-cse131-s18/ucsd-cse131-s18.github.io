@@ -37,19 +37,25 @@ through design challenges based on what you learn from implementation.
 
 - Piazza: <a href="https://piazza.com/class/jfh8ukqgp5h521">https://piazza.com/class/jfh8ukqgp5h521</a>
 - Gradescope: <a href="https://www.gradescope.com">https://www.gradescope.com</a> will be used for submissions (instructions will accompany the first programming assignment)
+- Textbook/readings: There's no official textbook, but I'll link to different
+  online resources for you to read to supplement lecture. Versions of this
+  course have been taught at several universities, so sometimes I'll link to
+  those instructor's materials, as well.
 
 <a id="schedule">
 ## Schedule
 
-The schedule below outlines topics, due dates, and links to assignments. By
-*Monday before class* all due dates, readings, and notable events in the course
-until the following Tuesday will be posted. So if you check the schedule at the
-beginning of the week, you'll know when all reading quizzes, programming
-assignments, etc. will be due. We will often have the schedule confirmed more
-than a week out, but we'll always be at least a week ahead.
+The schedule below outlines topics, due dates, and links to assignments. In a
+typical week, by *Monday before class* all due dates, readings, and notable
+events in the course until the following week will be posted here. So if you
+check the schedule at the beginning of the week, you'll know when all reading
+quizzes, programming assignments, etc. will be due. We will often have the
+schedule confirmed more than a week out, but we'll always be at least a week
+ahead. The schedule of lecture topics might change slightly, but I post a
+general plan so you can know roughly where we are headed.
 
-(The first week is an exception; we'll get everything you need for this week
-out by Tuesday evening)
+(The first week is an exception; we'll get everything you need for the first
+week out by Tuesday evening.)
 
 <iframe width="125%" height="500px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDuKr9zmldJrL_Xlp0YL75rpd29kzFu7e225l4Yu4s0pEECV5HTv5F68rljHVXMQ6uu62Hz-by2t0J/pubhtml?gid=1920614952&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
@@ -129,4 +135,32 @@ There may be exceptions to this policy posted clearly on individual assignments
 to encourage and enable various kinds of collaboration. The default for
 programming assignments is that they will be done individually, and exceptions
 to this policy will be announced in advance.
+
+### Diversity and Inclusion
+
+We are committed to fostering a learning environment for this course that
+supports a diversity of thoughts, perspectives and experiences, and respects
+your identities (including race, ethnicity, heritage, gender, sex, class,
+sexuality, religion, ability, age, educational background, etc.).  Our goal is
+to create a diverse and inclusive learning environment where all students feel
+comfortable and can thrive. 
+
+Our instructional staff will make a concerted effort to be welcoming and
+inclusive to the wide diversity of students in this course.  If there is a way
+we can make you feel more included please let one of the course staff know,
+either in person, via email/discussion board, or even in a note under the door.
+Our learning about diverse perspectives and identities is an ongoing process,
+and we welcome your perspectives and input.  
+
+We also expect that you, as a student in this course, will honor and respect
+your classmates, abiding by the UCSD Principles of Community
+(https://ucsd.edu/about/principles.html).  Please understand that others’
+backgrounds, perspectives and experiences may be different than your own, and
+help us to build an environment where everyone is respected and feels
+comfortable.
+
+If you experience any sort of harassment or discrimination, please contact the
+instructor as soon as possible.   If you prefer to speak with someone outside
+of the course, please contact the Office of Prevention of Harassment and
+Discrimination: https://ophd.ucsd.edu/. 
 
