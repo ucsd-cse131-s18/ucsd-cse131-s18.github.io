@@ -36,40 +36,45 @@ through design challenges based on what you learn from implementation.
 - Discussion: Center 119, 9am F
 
 - Piazza: <a href="https://piazza.com/class/jfh8ukqgp5h521">https://piazza.com/class/jfh8ukqgp5h521</a>
-- Gradescope: <a href="https://www.gradescope.com">https://www.gradescope.com</a> will be used for some submissions (instructions will accompany the first programming assignment)
+- Gradescope: <a href="https://www.gradescope.com">https://www.gradescope.com</a> will be used for submissions (instructions will accompany the first programming assignment)
 
 <a id="schedule">
 ## Schedule
 
-The schedule below outlines topics, due dates, and links to assignments. Our
-promise to you is that by *Monday before class* all due dates, readings, and
-notable events in the course until the following Tuesday will be posted. So if
-you check the schedule at the beginning of the week, you'll know when all
-reading quizzes, programming assignments, etc. will be due. We will often have
-the schedule confirmed more than a week out, but we'll always be at least a
-week ahead.
+The schedule below outlines topics, due dates, and links to assignments. By
+*Monday before class* all due dates, readings, and notable events in the course
+until the following Tuesday will be posted. So if you check the schedule at the
+beginning of the week, you'll know when all reading quizzes, programming
+assignments, etc. will be due. We will often have the schedule confirmed more
+than a week out, but we'll always be at least a week ahead.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDuKr9zmldJrL_Xlp0YL75rpd29kzFu7e225l4Yu4s0pEECV5HTv5F68rljHVXMQ6uu62Hz-by2t0J/pubhtml?gid=1920614952&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+(The first week is an exception; we'll get everything you need for this week
+out by Tuesday evening)
+
+<iframe width="125%" height="500px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDuKr9zmldJrL_Xlp0YL75rpd29kzFu7e225l4Yu4s0pEECV5HTv5F68rljHVXMQ6uu62Hz-by2t0J/pubhtml?gid=1920614952&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 <a id="staff">
 ## Staff & Resources
+
+An office hours schedule will be posted here in the first week. If you have
+immediate concerns, Joe has office hours from 1-2:30pm on Tuesday the first
+week.
 
 <a id="grading">
 ## Grading
 
 Your grade will be calculated from:
 
-- 10% participation and review quizzes
-  - Each week there will be a review quiz, three lectures, and a discussion
-  - You need to get at least 5 points per week to get participation credit for
-    the week
-  - The review quiz is scored 0-3 points, and you get a -1 if you don't attempt
-    it
-  - You get 1 point for each lecture and discussion where you attend and answer
-    the clicker questions
+- 5% participation via clickers
+  - Each week both lecture and discussion will have clicker questions. You get
+    credit for each session where you answer at least half of the questions.
+  - Discussion attendance is not mandatory
+- 5% review quizzes
+  - Each week there will be an online review quiz, you get full review quiz
+    credit for getting at least half the questions right
 - 35% programming assignments (7-9 total)
 - 20% take home written work
-- 15% a midterm exam
+- 15% a midterm exam, in class
 - 20% final exam
   - You must score over 50% on the final exam to pass the course
   - If you score higher on the final exam than on the midterm (including 0's on
@@ -82,7 +87,7 @@ Your grade will be calculated from:
 
 ### Late Work
 
-You have a total of 4 slip days that you can apply over the course of the
+You have a total of 4 extension days that you can apply over the course of the
 quarter. Any amount of time past the deadline counts as a full day. These apply
 to programming assignments and to take-home work. You cannot use more than one
 day on a given assignment.
@@ -102,39 +107,26 @@ along with exams to avoid unnecessary memorization.
 
 ### Academic Integrity
 
-There are two types of assignments in this course:
+The academic integrity policy for this course is similar to many other
+programming-focused courses. A few notes specific to this course, to be clear:
 
-- Open collaboration assignments, for which you can talk to anyone else in the
-  course, post snippets of code on Piazza, get lots of help from TAs, and
-  generally come up with solutions collaboratively. TAs may be able to get you
-  unstuck by suggesting very concrete strategies or code. There are a few
-  restrictions:
-  - Any code that you didn't write must be cited
-  - Any in-person conversations you have about the assignment must be noted in
-    your README
-  - You cannot share an entire repository of code or an entire solution. Keep
-    snippets to reasonable, descriptive chunks of code
-  - You still _cannot_ use code that you find online. That is, all the code
-    that is handed in should be developed by you or someone in the class.
-  - You still _cannot_ use code from anyone outside this offering of the
-    course.
+- You cannot use or consult code from any student in this course or any other
+  offering of this course in your solutions.
+- You cannot use or consult code from anyone else or from online resources not
+  explicitly allowed by the course in your solutions.
+- You cannot provide or publish your solutions in a place where other students
+  have access you.
+- You cannot collaborate on assignments _except_ as explicitly allowed by
+  certain assignments, which will be clearly marked.
+- No student shall discuss the content or answers of any exam or quiz with any
+  other student until after all the exams are graded and returned.  
 
-- Closed collaboration assignments, where you cannot collaborate with others.
-  You can ask clarification questions as private posts on Piazza or of TAs.
-  However, TAs will not look at your code or comment on it. Lab/office hours
-  these weeks are for conceptual questions or for questions about past
-  assignments only, no code assistance.
+All of the provisions in [the UCSD
+guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
+apply as well.
 
-Programming assignments will explicitly list whether they are open or closed
-collaboration. There will also be take-home written homeworks, which are always
-closed collaboration.
-
-The rationale for these two types of assignment is that programming tasks
-traditionally serve two goals: _learning_ and _assessment_. Sometimes these
-conflict – getting most or all of the insight from a TA or another student
-hampers our ability to assess your work. However, it's useful to ask questions
-and get comprehensive explanations while you're working, rather than only after
-you've handed something in. So, both kinds of assignments serve a useful
-purpose. Typically the open collaboration assignments will be worth less
-credit, to reflect the reduced emphasis on assessment.
+There may be exceptions to this policy posted clearly on individual assignments
+to encourage and enable various kinds of collaboration. The default for
+programming assignments is that they will be done individually, and exceptions
+to this policy will be announced in advance.
 
