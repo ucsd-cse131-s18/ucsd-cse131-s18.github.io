@@ -69,11 +69,11 @@ Your grade will be calculated from:
     the clicker questions
 - 35% programming assignments (7-9 total)
 - 20% take home written work
-- 10% a midterm exam
+- 15% a midterm exam
 - 20% final exam
   - You must score over 50% on the final exam to pass the course
   - If you score higher on the final exam than on the midterm (including 0's on
-    the midterm), the final applies at 30%
+    the midterm), the final applies at 35%
   - There are no make-up midterms; if you do not take the midterm, you get the
     same score on the midterm as you get on the final
 
