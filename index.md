@@ -29,6 +29,9 @@ an increasingly sophisticated series of compilers throughout the course to
 learn how different language features are compiled, and you will think
 through design challenges based on what you learn from implementation.
 
+This web page serves as the main source of announcements and resources for the
+course, as well as the syllabus.
+
 <a id="basics">
 ## Basics
 
