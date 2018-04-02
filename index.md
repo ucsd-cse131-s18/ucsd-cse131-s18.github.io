@@ -77,19 +77,22 @@ Your grade will be calculated from:
 - 5% participation via clickers
   - Each week both lecture and discussion will have clicker questions. You get
     credit for each session where you answer at least half of the questions.
-  - Discussion attendance is not mandatory
+  - Discussion attendance is not mandatory to get full clicker credit
+  - Credit is awarded proportionally to the number of total lectures with
+    clicker questions (usually around 25), with 4 allowed absences
 - 5% review quizzes
   - Each week there will be an online review quiz, you get full review quiz
     credit for getting at least half the questions right
-- 35% programming assignments (7-9 total)
+- 40% programming assignments (7-9 total)
 - 20% take home written work
-- 15% a midterm exam, in class
-- 20% final exam
-  - You must score over 50% on the final exam to pass the course
-  - If you score higher on the final exam than on the midterm (including 0's on
-    the midterm), the final applies at 35%
-  - There are no make-up midterms; if you do not take the midterm, you get the
-    same score on the midterm as you get on the final
+- 30% exams
+  - 10% a midterm exam, in class
+  - 20% final exam
+    - You must score over 50% on the final exam to pass the course
+    - If you score higher on the final exam than on the midterm (including 0's on
+      the midterm), the final applies at 35%
+    - There are no make-up midterms; if you do not take the midterm, you get the
+      same score on the midterm as you get on the final
 
 <a id="policies">
 ## Policies
