@@ -40,6 +40,7 @@ course, as well as the syllabus.
 - **Midterm**: May 4, Center 119, 9am (normal class time)
 - **Final**: June 13, TBA, 8am
 
+- Podcasts: <a href="https://podcast.ucsd.edu/podcasts/default.aspx?PodcastId=4931">https://podcast.ucsd.edu/podcasts/default.aspx?PodcastId=4931</a>
 - Piazza: <a href="https://piazza.com/class/jfh8ukqgp5h521">https://piazza.com/class/jfh8ukqgp5h521</a>
 - Gradescope: <a href="https://www.gradescope.com">https://www.gradescope.com</a> will be used for submissions (instructions will accompany the first programming assignment)
 - Textbook/readings: There's no official textbook, but I'll link to different
