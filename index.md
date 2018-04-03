@@ -37,7 +37,7 @@ course, as well as the syllabus.
 
 - Lecture: Center 109, 9am MWF
 - Discussion: Center 119, 9am F
-- **Midterm**: May 4, Center 119, 9am (normal class time)
+- **Midterm**: May 4, Center 109, 9am (normal class time)
 - **Final**: June 13, TBA, 8am
 
 - Podcasts: <a href="https://podcast.ucsd.edu/podcasts/default.aspx?PodcastId=4931">https://podcast.ucsd.edu/podcasts/default.aspx?PodcastId=4931</a>
