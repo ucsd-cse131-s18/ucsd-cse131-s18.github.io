@@ -92,7 +92,7 @@ Your grade will be calculated from:
   - 20% final exam
     - You must score over 50% on the final exam to pass the course
     - If you score higher on the final exam than on the midterm (including 0's on
-      the midterm), the final applies at 35%
+      the midterm), the final applies at 30%
     - There are no make-up midterms; if you do not take the midterm, you get the
       same score on the midterm as you get on the final
 
