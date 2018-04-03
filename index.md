@@ -36,7 +36,7 @@ course, as well as the syllabus.
 ## Basics
 
 - Lecture: Center 109, 9am MWF
-- Discussion: Center 119, 9am F
+- Discussion: Center 119, 12am F
 - **Midterm**: May 4, Center 109, 9am (normal class time)
 - **Final**: June 13, TBA, 8am
 
