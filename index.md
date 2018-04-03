@@ -102,9 +102,9 @@ Your grade will be calculated from:
 ### Late Work
 
 You have a total of 4 extension days that you can apply over the course of the
-quarter. Any amount of time past the deadline counts as a full day. These apply
-to programming assignments and to take-home work. You cannot use more than one
-day on a given assignment.
+quarter. Any amount of time (up to 24 hours) past the deadline counts as a full
+day. These apply to programming assignments and to take-home work. You cannot
+use more than one day on a given assignment.
 
 ### Regrades
 
