@@ -37,6 +37,8 @@ course, as well as the syllabus.
 
 - Lecture: Center 109, 9am MWF
 - Discussion: Center 119, 9am F
+- **Midterm**: May 4, Center 119, 9am (normal class time)
+- **Final**: June 13, TBA, 8am
 
 - Piazza: <a href="https://piazza.com/class/jfh8ukqgp5h521">https://piazza.com/class/jfh8ukqgp5h521</a>
 - Gradescope: <a href="https://www.gradescope.com">https://www.gradescope.com</a> will be used for submissions (instructions will accompany the first programming assignment)
