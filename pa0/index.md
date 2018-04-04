@@ -45,8 +45,8 @@ for the course.  Open up the file `.bashrc` in your home directory (with
 e.g. `vim ~/.bashrc`), and add these lines at the bottom:
 
 ```
-eval `opam config env --root=/home/linux/ieng6/cs131s/public/`
-. /home/linux/ieng6/cs131s/public/opam-init/init.sh
+eval `opam config env --root=/home/linux/ieng6/cs131s/public/opam`
+. /home/linux/ieng6/cs131s/public/opam/opam-init/init.sh
 ```
 
 Then run:
