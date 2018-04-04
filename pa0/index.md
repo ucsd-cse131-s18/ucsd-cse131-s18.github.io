@@ -588,7 +588,7 @@ let rec inorder_str (bt : btnode) : string =
     | Node(s, left, right) -> ...
 ```
 
-Now we can ask what the preorder traversal should yield in the case of a leaf
+Now we can ask what the inorder traversal should yield in the case of a leaf
 of the tree (or an empty tree altogether).  In this case, that ought to be an
 empty string.  So the `Leaf` case should be filled in with `""`.  How
 about for `Node`s?  We know an inorder traversal should have the elements
