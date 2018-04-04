@@ -451,7 +451,7 @@ your own for different kinds of tests as the semester goes on.
 `n` and returns the nth fibonacci number.  Write out the evaluation of
 `(fibonacci 4)` in substitution style.
 
-2. Write tests for `min` and `fibonacci` using `t_int`.
+2. Write tests for `max` and `fibonacci` using `t_int`.
 
 ## Programming in OCaml — Datatypes
 
