@@ -120,30 +120,61 @@ You are not allowed any study aids on in-class exams, aside from those
 pertaining to university-approved accommodations. References will be provided
 along with exams to avoid unnecessary memorization.
 
+You cannot discuss the content of exams with others in the course until grades
+have been released for that exam.
+
 ### Academic Integrity
 
-The academic integrity policy for this course is similar to many other
-programming-focused courses. A few notes specific to this course, to be clear:
+There are two types of assignments in this course:
 
-- You cannot use or consult code from any student in this course or any other
-  offering of this course in your solutions.
-- You cannot use or consult code from anyone else or from online resources not
-  explicitly allowed by the course in your solutions.
-- You cannot provide or publish your solutions in a place where other students
-  have access you.
-- You cannot collaborate on assignments _except_ as explicitly allowed by
-  certain assignments, which will be clearly marked.
-- No student shall discuss the content or answers of any exam or quiz with any
-  other student until after all the exams are graded and returned.  
+- **Open collaboration** assignments, for which you can talk to anyone else in the
+  course, post snippets of code on Piazza, get lots of help from TAs, and
+  generally come up with solutions collaboratively. TAs will be happy to look
+  at your code and suggest fixes, along with explaining them. There are a few
+  restrictions:
+  - Any code that you didn't write must be cited in the README file that goes
+    along with your submission
+      - **Example:** On an open collaboration assignment, you and another
+        student chat online about the solution, you figure out a particular
+        helper method together. Your README should say “The FOO function was
+        developed in collaboration with Firstname Lastname”
+      - **Example:** On an open collaboration assignment, a student posts the
+        compilation strategy they used to handle a type of expression you were
+        struggling with. Your README should say “I used the code from
+        https://piazza.com/class/id-of-post”
+  - Anyone you work with in-person must be noted in your README
+      - **Example:** You and another student sit next to each other in the lab,
+        and point out mistakes and errors to one another as you work through
+        the assignment. As a result, your solutions are substantially similar.
+        Your README should say “I collaborated with Firstname Lastname to
+        develop my solution.”
+  - You cannot share an entire repository of code or paste an entire solution
+    into Piazza. Keep snippets to reasonable, descriptive chunks of code; think
+    a dozen lines or so to get the point across.
+  - You still _cannot_ use code that you find online, or get assistance or code
+    from students outside of this offering of the class. All the code that is
+    handed in should be developed by you or someone in the class.
 
-All of the provisions in [the UCSD
+- **Closed collaboration** assignments, where you cannot collaborate with others.
+  You can ask clarification questions as private posts on Piazza or of TAs.
+  However, TAs will not look at your code or comment on it. Lab/office hours
+  these weeks are for conceptual questions or for questions about past
+  assignments only, no code assistance. On these assignments:
+    - You cannot look at or use anyone else's code
+    - You cannot discuss the assignment with other students
+    - You cannot post publicly about the assignment on Piazza (or on social
+      media or other forums). Of course, you can still post questions about
+      material from lecture on Piazza!
+    - All of the examples in the open collaboration section above would be
+      academic integrity violations on a closed collaboration assignment
+
+Programming assignments will explicitly list whether they are open or closed
+collaboration. There will also be take-home written homeworks, which are always
+closed collaboration.
+
+You should be familiar with [the UCSD
 guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
-apply as well.
-
-There may be exceptions to this policy posted clearly on individual assignments
-to encourage and enable various kinds of collaboration. The default for
-programming assignments is that they will be done individually, and exceptions
-to this policy will be announced in advance.
+on academic integrity as well.
 
 ### Diversity and Inclusion
 
