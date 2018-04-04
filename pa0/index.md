@@ -1056,7 +1056,7 @@ a pipeline from user program all the way to executable.
 
 A very simple compiler might just take the name of a file, and output the
 compiled assembly code on standard output.  Let's try that; here's a simple
-`compiler.ml` that takes a file as a command line argument, expects it to
+`compile.ml` that takes a file as a command line argument, expects it to
 contain a single integer on one line, and generates the corresponding assembly
 code:
 
@@ -1081,11 +1081,11 @@ let () =
   printf "%s\n" program;;
 ```
 
-Put this into `compiler.ml`, and create another file `87.int` that
+Put this into `compile.ml`, and create another file `87.int` that
 contains just the number 87, then run:
 
 ```
-⤇ ocaml compiler.ml 87.int
+⤇ ocaml compile.ml 87.int
 
 section .text
 global our_code_starts_here
@@ -1099,7 +1099,7 @@ pipeline of compilation to work out:
 
 
 ```
-⤇ ocaml compiler.ml 87.int > 87.s
+⤇ ocaml compile.ml 87.int > 87.s
 ⤇ nasm -f elf32 -o 87.o 87.s
 ⤇ clang -m32 -o 87.run main.c 87.o
 ⤇ ./87.run
@@ -1116,7 +1116,7 @@ If we like, we could capture this set of dependencies with a `make` rule:
 	nasm -f elf32 -o $@ $<
 
 %.s: %.int
-	ocaml compiler.ml $< > $@
+	ocaml compile.ml $< > $@
 ```
 
 If we put that in a `Makefile`, then we can just run:
