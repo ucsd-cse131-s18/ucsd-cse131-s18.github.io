@@ -68,9 +68,19 @@ week out by Tuesday evening.)
 <a id="staff">
 ## Staff & Resources
 
+### Office Hours
+
 An office hours schedule will be posted here in the first week. If you have
 immediate concerns, Joe has office hours from 1-2:30pm on Tuesday the first
 week.
+
+### Useful Resources
+
+- [OCaml Website](http://ocaml.org/)
+- [List of OCaml Tutorials](http://ocaml.org/learn/tutorials/)
+- [OCaml Tutorial](http://mirror.ocamlcore.org/ocaml-tutorial.org/)
+- [x86 Assembly Guide](http://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
+- [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf)
 
 <a id="grading">
 ## Grading
