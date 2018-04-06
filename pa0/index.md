@@ -793,7 +793,7 @@ the list.
 2. Implement and test a function called `remainders`, which takes a `int list`
 and a `int`, and produces a `(int * int) list`. The resulting list should
 contain the dividend and the remainder of dividing by the given number. For
-example, `(remainders [4, 6, 11] 3)` should produce `[(1, 1); (2, 0); (3, 2)]`
+example, `(remainders [4; 6; 11] 3)` should produce `[(1, 1); (2, 0); (3, 2)]`
 
 ## `option`
 
