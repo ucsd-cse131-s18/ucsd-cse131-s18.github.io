@@ -87,9 +87,11 @@ already):
 
 https://classroom.github.com/a/W5Ow7S0t
 
-To submit, you can use the “Github” option in Gradescope's submission
-interface. **We will make Gradescope submission available on Thursday, April
-5**
+See [handin](./#handin) at the bottom of this page for instructions on turning
+things in on Gradescope. This message on Piazza has the course registration
+code:
+
+https://piazza.com/class/jfh8ukqgp5h521?cid=35
 
 ## Programming in OCaml – The Basics
 
@@ -1140,6 +1142,7 @@ In the meantime, you have a little compiler to play with.  Can you think of
 any other interesting input program formats to try, or tweaks to the generated
 output to play with?
 
+<a id="#handin"></a>
 ### Handin
 
 When submitting the assignment on Gradescope, make sure to use the "GitHub"
@@ -1147,7 +1150,8 @@ button and select the repository that was automatically created for this
 assignment (`pa0--username` where `username` is your GitHub username).
 
 In the `compiler` directory, make sure to add your `Makefile`, `compile.ml`,
-and `main.c` for this part, and submit. Don't hand in any `.s`, `.o`, or `.run`
-files. We're just going to check that we can make a source file and run it
-through this process.
+and `main.c` for the compiler part, along with your additions to `functions.ml`
+and `test.ml` and submit. Don't hand in any `.s`, `.o`, or `.run` files. We're
+just going to check that we can make a source file and run it through this
+process.
 
