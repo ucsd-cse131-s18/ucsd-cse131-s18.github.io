@@ -74,6 +74,8 @@ An office hours schedule will be posted here in the first week. If you have
 immediate concerns, Joe has office hours from 1-2:30pm on Tuesday the first
 week.
 
+<iframe width="125%" height="500px" src="https://calendar.google.com/calendar/embed?src=ahe9u9otkp3ia0vtjsinpb7id4%40group.calendar.google.com&mode=week"></iframe>
+
 ### Useful Resources
 
 - [OCaml Website](http://ocaml.org/)
@@ -193,14 +195,14 @@ supports a diversity of thoughts, perspectives and experiences, and respects
 your identities (including race, ethnicity, heritage, gender, sex, class,
 sexuality, religion, ability, age, educational background, etc.).  Our goal is
 to create a diverse and inclusive learning environment where all students feel
-comfortable and can thrive. 
+comfortable and can thrive.
 
 Our instructional staff will make a concerted effort to be welcoming and
 inclusive to the wide diversity of students in this course.  If there is a way
 we can make you feel more included please let one of the course staff know,
 either in person, via email/discussion board, or even in a note under the door.
 Our learning about diverse perspectives and identities is an ongoing process,
-and we welcome your perspectives and input.  
+and we welcome your perspectives and input.
 
 We also expect that you, as a student in this course, will honor and respect
 your classmates, abiding by the UCSD Principles of Community
@@ -212,5 +214,4 @@ comfortable.
 If you experience any sort of harassment or discrimination, please contact the
 instructor as soon as possible.   If you prefer to speak with someone outside
 of the course, please contact the Office of Prevention of Harassment and
-Discrimination: https://ophd.ucsd.edu/. 
-
+Discrimination: https://ophd.ucsd.edu/.
