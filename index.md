@@ -70,10 +70,6 @@ week out by Tuesday evening.)
 
 ### Office Hours
 
-An office hours schedule will be posted here in the first week. If you have
-immediate concerns, Joe has office hours from 1-2:30pm on Tuesday the first
-week.
-
 <iframe width="125%" height="500px" src="https://calendar.google.com/calendar/embed?src=ahe9u9otkp3ia0vtjsinpb7id4%40group.calendar.google.com&mode=week"></iframe>
 
 ### Useful Resources
