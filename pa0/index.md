@@ -1142,6 +1142,10 @@ output to play with?
 
 ### Handin
 
+When submitting the assignment on Gradescope, make sure to use the "GitHub"
+button and select the repository that was automatically created for this
+assignment (`pa0--username` where `username` is your GitHub username).
+
 In the `compiler` directory, make sure to add your `Makefile`, `compile.ml`,
 and `main.c` for this part, and submit. Don't hand in any `.s`, `.o`, or `.run`
 files. We're just going to check that we can make a source file and run it
