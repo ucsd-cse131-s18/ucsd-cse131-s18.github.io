@@ -1,0 +1,8 @@
+*.log
+*.cache
+~$*
+*.cmi
+*.cmo
+*.run
+test
+*.swp
