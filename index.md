@@ -69,6 +69,12 @@ week out by Tuesday evening.)
 ## Staff & Resources
 
 ### Office Hours
+Office hours are subjected to change each week, so please check the calendar
+before you come. When you come to the office hour, we may ask you to put your
+name in the queue using the whiteboard. We won't use Autograder for this 
+course, because we want to encourage you to discuss with each other and ask 
+questions without code in front of us. That said, for open collaboration 
+assignments, we will be happy to help your code if you need it.
 
 <iframe width="125%" height="500px" src="https://calendar.google.com/calendar/embed?src=ahe9u9otkp3ia0vtjsinpb7id4%40group.calendar.google.com&mode=week"></iframe>
 
