@@ -1,6 +1,7 @@
 https://ucsd-cse131-s18.github.io
 
 Lecture notes links:
+
 https://ucsd-cse131-w17.github.io/lectures/04-02-mon/notes.html
 
 https://ucsd-cse131-w17.github.io/lectures/04-04-wed/notes.html
