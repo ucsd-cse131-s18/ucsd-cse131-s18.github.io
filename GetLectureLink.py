@@ -2,7 +2,7 @@ import os
 
 import glob
 
-path = 'ucsd-cse131-w17.github.io/lectures/'
+path = 'ucsd-cse131-s18.github.io/lectures/'
 lecture_path='./lectures'
 url_protocol='https://'
 
