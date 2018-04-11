@@ -1,0 +1,27 @@
+
+(max (max 3 2) 5);
+
+(* What is the next step? *)
+
+(*
+
+A: (max (if 3 > 2 then 3 else 2) 5);
+B: (if (max 3 2) > 5 then (max 3 2) else 5)
+C: It doesn't matter, they both make sense
+
+*)
+
+
+(sum_upto 4)
+
+(* What is the next step? *)
+
+(*
+
+A: (sum_upto (if 4 = 1 then 1 else 4 + (sum_upto (4 - 1))))
+B: (if 4 = 1 then 1 else n + (sum_upto (n - 1)))
+C: (if 4 = 1 then 1 else 4 + (sum_upto (4 - 1)))
+D: (sum_upto (if 4 = 1 then 1 else n + (sum_upto (n - 1))))
+
+
+*)

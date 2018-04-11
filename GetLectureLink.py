@@ -2,12 +2,12 @@ import os
 
 import glob
 
-path = 'ucsd-cse12-w17.github.io/lectures/'
+path = 'ucsd-cse131-s18.github.io/lectures/'
 lecture_path='./lectures'
 url_protocol='https://'
 
 master = open('README.md','w')
-master.write('https://ucsd-cse131-s18.github.io\n\nLecture notes links:\n')
+master.write('https://ucsd-cse131-s18.github.io\n\nLecture notes links:\n\n')
 os.chdir(lecture_path)
 
 

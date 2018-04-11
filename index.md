@@ -36,7 +36,7 @@ course, as well as the syllabus.
 ## Basics
 
 - Lecture: Center 109, 9am MWF
-- Discussion: Center 119, 12am F
+- Discussion: Center 119, 12pm (noon) F
 - **Midterm**: May 4, Center 109, 9am (normal class time)
 - **Final**: June 13, TBA, 8am
 
@@ -69,6 +69,12 @@ week out by Tuesday evening.)
 ## Staff & Resources
 
 ### Office Hours
+Office hours are subjected to change each week, so please check the calendar
+before you come. When you come to the office hour, we may ask you to put your
+name in the queue using the whiteboard. We won't use Autograder for this 
+course, because we want to encourage you to discuss with each other and ask 
+questions without code in front of us. That said, for open collaboration 
+assignments, we will be happy to help your code if you need it.
 
 <iframe width="125%" height="500px" src="https://calendar.google.com/calendar/embed?src=ahe9u9otkp3ia0vtjsinpb7id4%40group.calendar.google.com&mode=week"></iframe>
 
@@ -94,7 +100,16 @@ Your grade will be calculated from:
 - 5% review quizzes
   - Each week there will be an online review quiz, you get full review quiz
     credit for getting at least half the questions right
-- 40% programming assignments (7-9 total)
+- 40% programming assignments (9 total)
+  - PA0 **open collab** (warmup): 2%
+  - PA1 **closed collab** (let and arithmetic): 2%
+  - PA2 **open collab** (tagged values): 3%
+  - PA3 **closed collab** (functions): 8%
+  - PA4 **open collab** (using tuples): 3%
+  - PA5 **closed collab** (heap compilation): 7%
+  - PA6 **open collab** (C runtime library): 3%
+  - PA7 **closed collab** (memory management): 8%
+  - PA8 **open collab** (optimization): 4%
 - 20% take home written work
 - 30% exams
   - 10% a midterm exam, in class
