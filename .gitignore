@@ -6,3 +6,5 @@
 *.run
 test
 *.swp
+compile
+.DS_Store
