@@ -104,10 +104,10 @@ Your grade will be calculated from:
   - PA0 **open collab** (warmup): 2%
   - PA1 **closed collab** (let and arithmetic): 2%
   - PA2 **open collab** (tagged values): 3%
-  - PA3 **closed collab** (functions): 7%
+  - PA3 **closed collab** (functions): 8%
   - PA4 **open collab** (using tuples): 3%
   - PA5 **closed collab** (heap compilation): 7%
-  - PA6 **open collab** (C library): 4%
+  - PA6 **open collab** (C runtime library): 3%
   - PA7 **closed collab** (memory management): 8%
   - PA8 **open collab** (optimization): 4%
 - 20% take home written work
