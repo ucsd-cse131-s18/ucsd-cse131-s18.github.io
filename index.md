@@ -100,7 +100,16 @@ Your grade will be calculated from:
 - 5% review quizzes
   - Each week there will be an online review quiz, you get full review quiz
     credit for getting at least half the questions right
-- 40% programming assignments (7-9 total)
+- 40% programming assignments (9 total)
+  - PA0 **open collab** (warmup): 2%
+  - PA1 **closed collab** (let and arithmetic): 2%
+  - PA2 **open collab** (tagged values): 3%
+  - PA3 **closed collab** (functions): 7%
+  - PA4 **open collab** (using tuples): 3%
+  - PA5 **closed collab** (heap compilation): 7%
+  - PA6 **open collab** (C library): 4%
+  - PA7 **closed collab** (memory management): 8%
+  - PA8 **open collab** (optimization): 4%
 - 20% take home written work
 - 30% exams
   - 10% a midterm exam, in class
