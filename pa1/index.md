@@ -4,7 +4,7 @@ title: "PA1 – Simple Compiler with Binary Operations"
 doodle: "../doodle.png"
 ---
 
-# PA1 Anaconda, Due Wednesday 4/18/2018
+# PA1 Anaconda, Due Wednesday 4/18/2018 (Closed Collaboration)
 
 In this assignment you'll implement a compiler for a small language called
 Anaconda, that has let bindings and binary operators.
