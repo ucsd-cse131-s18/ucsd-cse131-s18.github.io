@@ -224,9 +224,10 @@ type sexp =
 | List of sexp list
 | Atom of string
 ```
-For more info about S-expressions in Core, see [here]https://realworldocaml.org/v1/en/html/data-serialization-with-s-expressions.html 
-Note that a large amount of the extended syntax and some of the functions
-from realworldocaml are out of date as Core is frequently updated.
+For more info about S-expressions in Core, see [here]https://dev.realworldocaml.org/data-serialization.html
+This is a new version of realworldocaml and is in progress, so it may have
+errors. It likely will not match the version of core on ieng6 for any syntax
+extensions,  as that version is somewhat dated.
 
 Thus, an example S-expression that could be parsed into a program would be as
 follows
@@ -253,6 +254,11 @@ Since most S-expressions are lists, you will need to check the first element
 of the list to see if the operation to perform is a `let`, `add1`, `*`, and so
 on. If a S-expression is of an invalid form, (i.e. a `let` with no body, a `+`
 with three arguments, etc.) report an appropriate error using failwith.
+
+You should also check that an id is valid, as in it matches the regex given
+in `parser.ml`. Specifically, it should be at least one letter, followed by
+any number of letters or numbers. It should also not match any reserved words
+in the language, i.e. `let`, `add1`, or `sub1`.
 
 The parsing should be implemented in
 ```
