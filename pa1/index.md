@@ -255,10 +255,9 @@ of the list to see if the operation to perform is a `let`, `add1`, `*`, and so
 on. If a S-expression is of an invalid form, (i.e. a `let` with no body, a `+`
 with three arguments, etc.) report an appropriate error using failwith.
 
-You should also check that an id is valid, as in it matches the regex given
-in `parser.ml`. Specifically, it should be at least one letter, followed by
-any number of letters or numbers. It should also not match any reserved words
-in the language, i.e. `let`, `add1`, or `sub1`.
+You can assume that an id is a valid string of form `[a-zA-z][a-zA-Z0-9]*`.
+You will, however, have to check that the string does not match any of
+the language's reserved words, such as `let`, `add1`, and `sub1`.
 
 The parsing should be implemented in
 ```
