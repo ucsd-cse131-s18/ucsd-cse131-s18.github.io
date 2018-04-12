@@ -20,7 +20,7 @@ If you are working on your own computer, install the Ocaml library
 core with `opam install core`. This will take a while, but is needed
 for the S-expression parsing we will be using. Note that the version of
 Core (and Ocaml) will not match between ieng6 and gradescope(or your 
-computer), so it is your responsibility to ensure your code compile
+computer), so it is your responsibility to ensure your code compiles
 properly. You should avoid using Core functionality outside of
 the small portion needed for S-expressions for this reason.
 
@@ -224,7 +224,7 @@ type sexp =
 | List of sexp list
 | Atom of string
 ```
-For more info about S-expressions in Core, see [here]https://dev.realworldocaml.org/data-serialization.html
+For more info about S-expressions in Core, see [here](https://dev.realworldocaml.org/data-serialization.html)
 This is a new version of realworldocaml and is in progress, so it may have
 errors. It likely will not match the version of core on ieng6 for any syntax
 extensions,  as that version is somewhat dated.
