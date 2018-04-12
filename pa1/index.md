@@ -190,8 +190,7 @@ infrastructure:
 
 * A parser for Anaconda which takes a s-expression that represents the code,
   and converts it to an abstract syntax tree (`parser.ml`). You need to
-  implement the parser to actually perform the conversion, although a portion
-  involving converting to a number or id is implemented as an example.
+  implement the parser to actually perform the conversion.
 * A main program (`main.ml`) that uses the parser and compiler to produce
   assembly code from an input Anaconda text file.  You don't need to edit this.
 * A `Makefile` that builds `main.ml`, builds a tester for Anaconda
