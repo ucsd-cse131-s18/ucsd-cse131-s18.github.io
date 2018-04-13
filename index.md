@@ -97,9 +97,11 @@ Your grade will be calculated from:
   - Discussion attendance is not mandatory to get full clicker credit
   - Credit is awarded proportionally to the number of total lectures with
     clicker questions (usually around 25), with 4 allowed absences
+  - Clicker scores can be checked <a href="https://docs.google.com/spreadsheets/d/1EcJMgQEQE9es9OW7Vi0CtrLB9p5J5KCNqzXygtSnV5Q/edit#gid=0">here</a>
 - 5% review quizzes
   - Each week there will be an online review quiz, you get full review quiz
     credit for getting at least half the questions right
+  - Quiz scores can be checked <a href="https://docs.google.com/spreadsheets/d/18yBlEHcCmm8T5ST2d1OV_fGQU8hWeW24amdbtDCbdG8/edit#gid=0">here</a>
 - 40% programming assignments (9 total)
   - PA0 **open collab** (warmup): 2%
   - PA1 **closed collab** (let and arithmetic): 2%
