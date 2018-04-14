@@ -46,7 +46,7 @@ The concrete syntax of Anaconda is:
 <expr> :=
   | <number>
   | <identifier>
-  | (let (<bindings>) (<expr>))
+  | (let (<bindings>) <expr>)
   | (add1 <expr>)
   | (sub1 <expr>)
   | (+ <expr> <expr>)
