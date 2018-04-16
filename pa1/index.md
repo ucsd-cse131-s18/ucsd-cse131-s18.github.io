@@ -9,7 +9,7 @@ doodle: "../doodle.png"
 In this assignment you'll implement a compiler for a small language called
 Anaconda, that has let bindings and binary operators.
 
-
+See list of common issues: [FAQ](https://piazza.com/class/jfh8ukqgp5h521?cid=106)
 
 
 ## Setup
