@@ -82,7 +82,6 @@ type expr =
   | EId of string
   | ENumber of int
   | EBool of bool
-  | EInput
   | EPrim1 of prim1 * expr
   | EPrim2 of prim2 * expr * expr
 ```
