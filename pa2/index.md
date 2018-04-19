@@ -1,11 +1,10 @@
 ---
 layout: page
 title: "PA2 – Bitwise Offset Arrangement"
+doodle: "https://animalcorner.co.uk/wp-content/uploads/2015/02/boa-constrictor-1.jpg"
 ---
 
 # PA2 Boa, Due Wednesday 4/25/2018 (Open Collaboration)
-
-![A boa](https://animalcorner.co.uk/wp-content/uploads/2015/02/boa-constrictor-1.jpg =400x)
 
 [Get your repo here](https://classroom.github.com/assignment-invitations/21d16e460f0d988f23eea70a169dfc56)
 
