@@ -64,7 +64,6 @@ one-to-one with the concrete syntax.
 type prim1 =
   | Add1
   | Sub1
-  | Print
   | IsNum
   | IsBool
 
