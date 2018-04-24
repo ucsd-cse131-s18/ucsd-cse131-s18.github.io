@@ -386,6 +386,25 @@ Otherwise print the value in using this printf format `Unknown value: %#010x\n`.
 #### What is a valid id name?
 You can assume that an id is a valid string of form [a-zA-z][a-zA-Z0-9]*. You will, however, have to check that the string does not match any of the language's reserved words.
 
+#### Can you provide more examples of converting to Boa representation?
+numbers are the binary representation shifted left by 1 bit with the lower bit set as 1
+
+|    Value |               Representation (Binary) |
+|---------:|--------------------------------------:|
+|       `3`| `[0b00000000000000000000000000000111]`|
+|       `5`| `[0b00000000000000000000000000001011]`|
+|      `12`| `[0b00000000000000000000000000011001]`|
+|      `42`| `[0b00000000000000000000000001010101]`|
+
+Or in HEX,
+
+|    Value |   Representation (HEX) |
+|----------|-------------------------
+|       `3`|          `[0x00000007]`|
+|       `5`|          `[0x0000000b]`|
+|      `12`|          `[0x00000019]`|
+|      `42`|          `[0x00000055]`|
+
 ### Testing Functions
 
 These are the same as they were for Anaconda.  Your tests should
