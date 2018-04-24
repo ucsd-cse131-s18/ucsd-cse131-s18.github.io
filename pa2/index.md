@@ -126,11 +126,12 @@ should throw `overflow` at runtime.
 
 You will implement a pre-defined variable — `input`, which should evaluate to a
 user-provided inputted value, which can be an integer number, true, or false. 
-You need to parse the input value in `main.c` and check for two parsing errors at runtime:
-1. input must be a boolean or a number
-2. input is not a representable number
+You need to parse the input value in `main.c` and check for two parsing errors:
+1. `input must be a boolean or a number`
+2. `input is not a representable number`
 
-Keep in mind that errors should be printed to **standard error**. You can use a call like `fprintf(stderr, "msg",..)`. 
+Keep in mind that the exact error strings should be printed to **standard error**.
+You can use a call like `fprintf(stderr, "msg",..)`. 
 
 If an argument isn't provided to the executable, the default value of `input` should be `false`.
 After the input value is parsed, it will be passed to `our_code_starts_here` as a function
@@ -141,6 +142,10 @@ The input value should be provided as a command-line argument
 to the _generated executable_.
 
 For example, `./somefile.run 4` makes it so `input` evaluates to 4.
+
+For example, `./somefile.run 46abc` prints error `input must be a boolean or a number` in stderr.
+
+For example, `./somefile.run 9999999999999999` prints error `input is not a representable number` in stderr.
 
 ### Checking for Errors
 
