@@ -13,14 +13,9 @@ expr := <number>
 op   := inc | dec
 *)
 
-type op =
-  | Inc
-  | Dec
-
 type expr =
   | ENum of int
   | EBool of bool
-  | EOp of op * expr
   | EId of string
   | EIf of expr * expr * expr
   | ELet of string * expr * expr
@@ -49,8 +44,6 @@ let rec sexp_to_expr (se : Sexp.t) : expr =
         | Some(i) -> ENum(i))
     | List(sexps) ->
       match sexps with
-        | [Atom("inc"); arg] -> EOp(Inc, sexp_to_expr arg)
-        | [Atom("dec"); arg] -> EOp(Dec, sexp_to_expr arg)
         | [Atom("+"); arg1; arg2] -> EPlus(sexp_to_expr arg1, sexp_to_expr arg2)
         | [Atom("if"); arg1; arg2; arg3] ->
           EIf(sexp_to_expr arg1, sexp_to_expr arg2, sexp_to_expr arg3)
@@ -118,7 +111,6 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) =
       e1is @
       [sprintf "mov %s, eax" (stackval si)] @
       e2is @
-       (* Check that the right-hand operand is a number *)
       [sprintf "mov %s, eax" (stackval (si + 1));
        sprintf "mov eax, %s" (stackval si);
        sprintf "add eax, %s" (stackval (si + 1));
@@ -134,11 +126,6 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) =
       vis @
       [sprintf "mov [ebp - %d], eax" (stackloc si)] @
       bis
-    | EOp(op, e) ->
-      let arg_exprs = e_to_is e si env in
-      (match op with
-        | Inc -> arg_exprs @ ["add eax, 1"]
-        | Dec -> arg_exprs @ ["sub eax, 1"])
     | EIf(cond, thn, els) ->
       let condis = e_to_is cond si env in
       let afterlabel = gen_tmp "after_if" in
@@ -160,7 +147,6 @@ let rec stack_depth (e : expr) =
     | EId(_) -> 0
     | ELet(x, v, body) -> (max (stack_depth v) ((stack_depth body) + 1))
     | EPlus(lhs, rhs) -> (max (stack_depth lhs) ((stack_depth rhs) + 1)) + 1
-    | EOp(op, e) -> stack_depth e
     | EApp(name, arg) -> (stack_depth arg) + 1
     | EIf(cond, thn, els) ->
       max (max (stack_depth cond) (stack_depth thn)) (stack_depth els)
@@ -207,9 +193,11 @@ error:
   jmp print_error_and_exit
 %s
 our_code_starts_here:
+  mov eax, [esp+4]
   push ebp
   push after_main
   mov ebp, esp
+  push eax
   jmp our_main
   after_main:
   pop ebp
