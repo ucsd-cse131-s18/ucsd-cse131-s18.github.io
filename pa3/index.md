@@ -1,11 +1,10 @@
 ---
 layout: page
 title: "PA3 – Cobra"
+doodle: "http://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_cobra.jpg"
 ---
 
 # PA3 Cobra, Due Wednesday 5/02/2018 (Closed Collaboration)
-
-![A cobra](http://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_cobra.jpg)
 
 [Get your repo here](https://classroom.github.com/a/VYutD1VP)
 
