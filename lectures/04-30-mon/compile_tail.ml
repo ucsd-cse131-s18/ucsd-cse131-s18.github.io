@@ -115,9 +115,10 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) (tc: bool) =
       arg2is @ [ sprintf "mov %s, eax" (stackval (si + 1)) ] @
       init @
       [
-        "mov ebp, esp";
         sprintf "mov eax, %s" (stackval si); "push eax";
         sprintf "mov eax, %s" (stackval (si + 1)); "push eax";
+        "mov ebp, esp";
+        "add ebp, 8";
         sprintf "jmp %s" name;
       ] @
       after
