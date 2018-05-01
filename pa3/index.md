@@ -283,3 +283,35 @@ latter does not. For example, if we wish to run the program `foo` that takes no
 `input` and returns `5`, we would write:
 
 `tvg_main "foo" "(+ 1 4)" "5";`
+
+#### Sample Programs
+Below are some sample programs and what they should return. Hopefully this clears up
+some questions about functions
+
+```
+(
+  (define giveMe5 ()
+    5)
+  (define our_main (input)
+    (giveMe5))
+)
+(* evaluates to 5 *)
+
+(
+  (define our_main (input)
+    (add3 1 2 3))
+  (define add3 (x y z)
+    (+ (+ x y) z))
+)
+(* evaluates to 6 *)
+
+(
+  (define foo ()
+    5)
+  (define our_main (input)
+    (let ((foo 2))
+      (- (foo) foo)))
+)
+(* evaluates to 3 *)
+```
+
