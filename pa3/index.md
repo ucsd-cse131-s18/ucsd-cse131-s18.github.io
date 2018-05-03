@@ -206,6 +206,32 @@ out of the program. Also, managing `EBP` and moving `ESP` forward is the
 responsibility of the callee in the C calling convention, thus we do not manage them
 when calling `print`.
 
+## Print
+
+The new operator `print` has the purpose of printing out and returning the value which it recieved. For example, the program
+```
+((define our_main (input)
+ (print 5)))
+```
+will return the output
+```
+5
+5
+```
+Note that the first `5` is printed because of the `print` operator, while the second `5` is printed since it was the last value in `EAX`.
+
+Since `print` returns the same value passed to it, we can define programs such as
+```
+((define our_main (input)
+ (+ (print 3) 4)))
+```
+which will return the output
+```
+3
+7
+```
+In order to implement this, you'll need to call the C `print` function defined in `main.c`. Do note that since you're calling a C function you must follow the C calling convention discussed above.
+
 #### The check function
 
 The `check` function will have to be extended to handle `programs` rather than
