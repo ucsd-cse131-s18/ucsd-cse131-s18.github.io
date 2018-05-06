@@ -143,9 +143,9 @@ elements in a list will be numbers. You must also implement the following list f
 
 `(sum (link 3 (link 7 false)))` returns the value `10`
 
-* append - given a list and an element, append the element to the front of the list
+* append - given an element and a list, append the element to the front of the list
 
-`(append (link 2 (link 1 false)) 3)` returns the list `(3,(2,(1,false)))`
+`(append 3 (link 2 (link 1 false)))` returns the list `(3,(2,(1,false)))`
 
 * reverse - return the list in reverse order
 
