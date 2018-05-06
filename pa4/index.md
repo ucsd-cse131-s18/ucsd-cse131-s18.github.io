@@ -86,7 +86,7 @@ Tuples (or, as we'll see when we implement this, references to tuples) are value
 ```
 (tup 2 (tup false true) 10)
 ```
-which creates a tuple with three elements, `2`, `(false, false)`, and `10`.
+which creates a tuple with three elements, `2`, `(false, true)`, and `10`.
 
 ### Example 4: 
 We can also get access to relevant information about tuples and their elements. For example,
@@ -207,7 +207,7 @@ does not exist, return `false`
 
 * inorder\_keys - return a list containing all stored keys in the tree in order
 
-`(inorder_keys (insert (node 2 3) 1 5))` will return the list `(2, (3, false))` (e.g. using the representation of lists given before)
+`(inorder_keys (insert (node 2 3) 1 5))` will return the list `(2, (1, false))` (e.g. using the representation of lists given before)
 
 * inorder\_values - return a list containing all stored values in the tree in order
 
