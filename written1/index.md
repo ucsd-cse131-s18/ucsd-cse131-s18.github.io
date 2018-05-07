@@ -101,12 +101,12 @@ Example (you cannot use this idea in your answer):
 
 _(16 points, write no more than 1 page)_
 
-You work on the team that develops Cobra for enterprise customers. The project
-manager for Cobra comes back from a conference and, full of enthusiasm, announces
-that the next release of Cobra must support a `null` value, because it is a
-ubiquitous feature in other languages.  When you press for more details about
-the details of how `null` should work, the project manager urges you to “make
-it work like in Java.”
+Imagine that you work on the team that develops Cobra for enterprise
+customers. The project manager for Cobra comes back from a conference and,
+full of enthusiasm, announces that the next release of Cobra must support a
+`null` value, because it is a ubiquitous feature in other languages. When you
+press for more details about the details of how `null` should work, the
+project manager urges you to “make it work like in Java.”
 
 Come up with a design and implementation plan for adding `null` to Cobra. You
 should not turn in code. Rather, you should identify all the places that need
@@ -126,7 +126,7 @@ made to add this new value and the consequences of doing so.
 
 ## Adding New Expressions – Sequencing, Variable Mutation, and While Loops
 
-_(24 points)_
+_(24 points; write no more than 2 pages)_
 
 The languages we've implemented so far have not had any notion of variable
 _assignment_ (just variable declaration). In addition, every function's body
@@ -147,6 +147,12 @@ For each, identify:
 - What instructions should be generated for each
 
 You can implement it if you want to make sure you're on the right track, but
-don't hand in code. Instead, your write-up should be broken down by the 9
-sections suggested above, much in the spirit of our writeups that list the
-features across these three dimensions, with examples.
+don't hand in code. Instead, your write-up should be broken down by the
+4-point breakdown suggested above, once for each feature, using examples.
+
+
+## Turnin
+
+You must turn in a PDF for your submission on Gradescope to the `written1`
+assignment. You should have question 1 on the first page, question 2 on the
+section page, and question 3 on the subsequent pages.
