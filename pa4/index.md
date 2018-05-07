@@ -207,13 +207,13 @@ does not exist, return `false`
 
 `(size (insert (node 1 2) 3 4))` will return `2`
 
-* inorder\_keys - return a list containing all stored keys in the tree in order
+* inorder\_keys - return a list containing all stored keys by traversing through the tree inorder
 
-`(inorder_keys (insert (node 2 3) 1 5))` will return the list `(2, (1, false))` (e.g. using the representation of lists given before)
+`(inorder_keys (insert (node 2 3) 1 5))` will return the list `(1, (2, false))` (e.g. using the representation of lists given before)
 
-* inorder\_values - return a list containing all stored values in the tree in order
+* inorder\_values - return a list containing all stored values by traversing through the tree inorder
 
-`(inorder_values (insert (node 2 3) 1 5))` will return the list `(3, (5, false))` (e.g. using the representation of lists given before)
+`(inorder_values (insert (node 2 3) 1 5))` will return the list `(5, (3, false))` (e.g. using the representation of lists given before)
 
 ### Implementing and Testing Lists and BSTs
 Fill in your BST and List implementation in `ds.ml`. We have already given you a skeleton of the
