@@ -72,6 +72,18 @@ Example (you cannot use this idea in your answer):
             (if 4 true false) would now evaluate to true rather than an error
             (if false true false) would evaluate to false
 
+        The overall skeleton of generated if code would look like this,
+        omitting the extra checking for boolean-ness.
+
+            ... get condition to EAX ...
+            cmp EAX, <false's representation>
+            je else_label
+            ... instructions for then case ...
+            jmp done
+            else_label:
+            ... instructions for else case ...
+            done:
+
         No representations need to change to accommodate this, just the
         instructions generated for the EIf case.
 
