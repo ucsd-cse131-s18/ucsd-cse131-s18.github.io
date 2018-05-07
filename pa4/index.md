@@ -128,8 +128,8 @@ This will be printed as
 ```
 (1,(2,(3,false)))
 ```
-Note that we used `false` to indicate the end of the list above. You may assume that all
-elements in a list will be numbers. You must also implement the following list functions
+Note that we used `false` to indicate an empty list, marking `3` as the last
+element of the list. You may assume that all elements in a list will be numbers. You must also implement the following list functions
 
 * link - new list with a single pair
 
@@ -139,13 +139,15 @@ elements in a list will be numbers. You must also implement the following list f
 
 `(length (link 0 (link 1 false)))` returns the value `2`
 
+`(length false)` returns the value `0`
+
 * sum - sum all elements in the list
 
 `(sum (link 3 (link 7 false)))` returns the value `10`
 
-* append - given an element and a list, append the element to the front of the list
+* append - given two lists, append the left list to the front of the right list
 
-`(append 3 (link 2 (link 1 false)))` returns the list `(3,(2,(1,false)))`
+`(append (link 4 (link 3 false)) (link 2 (link 1 false)))` returns the list `(4,(3,(2,(1,false))))`
 
 * reverse - return the list in reverse order
 
