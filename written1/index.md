@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Written Assignment 1"
+doodle: "../doodle.png"
+---
 **NOTE – this isn't official until formally released on the schedule page**
 
 No matter how you continue in the field of computer science—whether you're a
@@ -6,12 +11,13 @@ technical writer, etc—you will be confronted with numerous design decisions.
 That is, you or someone on your team will have an idea for how to improve the
 status quo, or how to get off the ground on a new project that you're not
 sure how to start, and so on. You will need to develop skills in effectively
-judging the merit of these ideas, and communicating it to your team.
+judging the merit of these ideas, and communicating it to your team or to
+other groups.
 
 In addition, lots of modern language design happens in Github issues, mailing
 lists, and with carefully-written proposals on project Wiki pages. Making
 your argument clear and using examples allows others to critique it
-effectively and judge its merits.
+effectively and iterate on designs.
 
 These skills are what these assignments seek to simulate (along with
 evaluating your understanding of compilers). Each poses a design question.
@@ -26,20 +32,22 @@ answer to respond to.
 the resulting chain of reasoning is clear
 - Concise, so that people don't have to waste time wading through extra words
 
-You'll be graded on all these things, so “wrong” answers can get significant
-credit if they are clear enough that the mistake is understandable. The point
-is to have made identifiable decisions with plausible justification and a
-concrete specification.
+You'll be graded on all these things (concision we enforce by giving you
+length limits, and though more per-question grade criteria are provided
+below), so “wrong” answers can get significant credit if they are clear
+enough that the mistake is understandable. The point is to have made
+identifiable decisions with plausible justification and a concrete
+specification.
 
 ## Giving Meaning to Errors
 
-_(8 points)_
+_(16 points, write no more than 1 page)_
 
 In Boa, the course staff decided on a number of cases could cause errors –
 the conditional part of ifs, mixing booleans and numbers in operators,
-parsing user input, checking for overflow, and so on. Choose two different
-such tag-checking errors from Boa, and design behavior that they should have
-_other_ than producing an error. For each:
+parsing user input, checking for overflow, and so on. Choose one such error
+from Boa, and design behavior that it should have _other_ than producing an
+error. For each:
 
 - Describe the non-erroneous behavior
 - Summarize how you would change the implementation to accommodate the new
@@ -51,18 +59,38 @@ _other_ than producing an error. For each:
 
 Example (you cannot use this idea in your answer):
 
-        The conditional part of if should not raise an error on non-boolean values.
-        Instead, it should treat all non-`false` values (including 0) as `true`.
+        I propose that the conditional part of if should not raise an error
+        on non-boolean values. Instead, it should treat all non-`false`
+        values (including 0) as `true`.
 
         To change this, I'd make if simply compare the value of the
         conditional with the representation of `false` directly, and jump to
         the false case if equal, and proceed to the then case otherwise. This
         would skip the extra instructions for checking with `true` explicitly
-        and then having a third case that jumps to an error.
+        and then having a third case that jumps to an error. Examples:
 
-        This is a good idea makes it makes `if` more efficient, because we'd
-        only have to compare with a single value. This is how the Racket
-        programming language works, so there's precedent, as well:
+            (if 4 true false) would now evaluate to true rather than an error
+            (if false true false) would evaluate to false
+
+        The overall skeleton of generated if code would look like this,
+        omitting the extra checking for boolean-ness.
+
+            ... get condition to EAX ...
+            cmp EAX, <false's representation>
+            je else_label
+            ... instructions for then case ...
+            jmp done
+            else_label:
+            ... instructions for else case ...
+            done:
+
+        No representations need to change to accommodate this, just the
+        instructions generated for the EIf case.
+
+        This is a good idea because it makes it makes `if` generate fewer
+        total instructions, resulting in smaller binaries and faster code.
+        This is how the Racket programming language works, so there's
+        precedent, as well; here are some examples in Racket:
 
             (if #t "a" "b") ; evaluates to "a"
             (if "hello" "a" "b") ; evaluates to "a"
@@ -71,7 +99,7 @@ Example (you cannot use this idea in your answer):
 
 ## Adding a New Value – `null`
 
-_(10 points)_
+_(16 points, write no more than 1 page)_
 
 You work on the team that develops Cobra for enterprise customers. The project
 manager for Cobra comes back from a conference and, full of enthusiasm, announces
@@ -87,17 +115,18 @@ an implementation. Consider:
 
 - Changes to concrete syntax
 - Changes to abstract syntax
-- What instructions to generate for the new abstract syntax
-- What representation `null` will have as a value at runtime
-- How this will interact with existing features and values from Cobra
+- What representation `null` will have as a value at runtime, what
+instructions to generate for the new abstract syntax
+- How this will interact with existing features and values from Cobra, and if
+any existing cases need to change to accommodate `null`
 
 Note that there isn't an objective correct answer to some of these, the goal
 is to demonstrate that you've though through the decisions that need to be
-made to add this new value and their consequences.
+made to add this new value and the consequences of doing so.
 
 ## Adding New Expressions – Sequencing, Variable Mutation, and While Loops
 
-_(18 points)_
+_(24 points)_
 
 The languages we've implemented so far have not had any notion of variable
 _assignment_ (just variable declaration). In addition, every function's body
