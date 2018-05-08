@@ -4,7 +4,7 @@ title: "Written Assignment 1"
 doodle: "../doodle.png"
 ---
 
-# Written Assignment 1
+# Written Assignment 1 (closed collaboration)
 
 No matter how you continue in the field of computer science—whether you're a
 software engineer, academic researcher, web developer, systems architect,
