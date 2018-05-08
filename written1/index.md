@@ -3,7 +3,8 @@ layout: page
 title: "Written Assignment 1"
 doodle: "../doodle.png"
 ---
-**NOTE – this isn't official until formally released on the schedule page**
+
+# Written Assignment 1
 
 No matter how you continue in the field of computer science—whether you're a
 software engineer, academic researcher, web developer, systems architect,
