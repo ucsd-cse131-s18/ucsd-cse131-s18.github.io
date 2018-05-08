@@ -145,7 +145,7 @@ element of the list. You may assume that all elements in a list will be numbers.
 
 `(sum (link 3 (link 7 false)))` returns the value `10`
 
-* append - given two lists, append the left list to the front of the right list
+* append - given two lists, append the left list to the front of the right list, if the left list is empty, just return the right list
 
 `(append (link 4 (link 3 false)) (link 2 (link 1 false)))` returns the list `(4,(3,(2,(1,false))))`
 
