@@ -157,4 +157,4 @@ don't hand in code. Instead, your write-up should be broken down by the
 You must turn in a PDF for your submission on Gradescope to the `written1`
 assignment. You should have question 1 on the first page, question 2 on the
 section page, and question 3 on the subsequent pages. You must hand in by
-11:59pm on Sunday, May 14, and no extension days are allowed.
+11:59pm on Monday, May 14, and no extension days are allowed.
