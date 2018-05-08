@@ -22,7 +22,7 @@ Diamondback adds the following to the concrete syntax of Cobra
   ...
   | (tup <expr list>)
   | (tup-len <expr>)
-  | (tup-get <expr>)
+  | (tup-get <expr> <expr>)
   | (is-tup <expr>)
 ```
 
