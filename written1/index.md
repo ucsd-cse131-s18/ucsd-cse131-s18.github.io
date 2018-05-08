@@ -34,7 +34,7 @@ the resulting chain of reasoning is clear
 - Concise, so that people don't have to waste time wading through extra words
 
 You'll be graded on all these things (concision we enforce by giving you
-length limits, and though more per-question grade criteria are provided
+length limits, and more per-question grade criteria are provided
 below), so “wrong” answers can get significant credit if they are clear
 enough that the mistake is understandable. The point is to have made
 identifiable decisions with plausible justification and a concrete
@@ -106,8 +106,8 @@ Imagine that you work on the team that develops Cobra for enterprise
 customers. The project manager for Cobra comes back from a conference and,
 full of enthusiasm, announces that the next release of Cobra must support a
 `null` value, because it is a ubiquitous feature in other languages. When you
-press for more details about the details of how `null` should work, the
-project manager urges you to “make it work like in Java.”
+press for more details of how `null` should work, the project manager urges
+you to “make it work like in Java.”
 
 Come up with a design and implementation plan for adding `null` to Cobra. You
 should not turn in code. Rather, you should identify all the places that need
@@ -122,7 +122,7 @@ instructions to generate for the new abstract syntax
 any existing cases need to change to accommodate `null`
 
 Note that there isn't an objective correct answer to some of these, the goal
-is to demonstrate that you've though through the decisions that need to be
+is to demonstrate that you've thought through the decisions that need to be
 made to add this new value and the consequences of doing so.
 
 ## Adding New Expressions – Sequencing, Variable Mutation, and While Loops
