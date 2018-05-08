@@ -236,7 +236,7 @@ Tests help us find mistakes in our implementations. One way to assess the qualit
 
 To detect a buggy compiler means to write a test that produces different output on the correct compiler than 
 the correct compiler. Your task is to write tests that cause the buggy compilers to fail, which we provided as binaries. 
-Under the `/compilers` subdirectory, you are given a correctly implemented compiler binary, and 2 incorrect compiler binaries. Your task is to write test cases that catch these bugs.
+Under the `/compilers` subdirectory, you are given a correctly implemented compiler binary, and 7 incorrect compiler binaries. Your task is to write test cases that catch these bugs.
 
 All of these tests should be filled in `myBuggyCompilerTestList` in `myTests.ml`. 
 Use `detect_buggy_compiler` to write a detection test. To check your detection attempt, do
