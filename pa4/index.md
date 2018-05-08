@@ -190,7 +190,7 @@ following BST functions
 
 `(node 1 4)` will create a child-less node with a key of `1` and value of `4`
 
-* insert - insert a value given a key into the BST (keys must be unique, otherwise return the BST without modifying it)
+* insert - insert a value given a key into the BST (keys must be unique, otherwise return the BST without modifying it). Insertion is done based on comparing keys.
 
 `(insert (node 1 3) 2 4)` will return `((1,3), (), ((2,4), (), ()))`
 
