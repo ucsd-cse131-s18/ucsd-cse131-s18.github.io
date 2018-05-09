@@ -8,3 +8,4 @@ test
 *.swp
 compile
 .DS_Store
+_site/
