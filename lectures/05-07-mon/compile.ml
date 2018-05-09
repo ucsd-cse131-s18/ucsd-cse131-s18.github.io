@@ -10,6 +10,8 @@ type expr =
   | EIf of expr * expr * expr
   | ELet of string * expr * expr
   | EPlus of expr * expr
+  | ELess of expr * expr
+  | EMinus of expr * expr
   | EEq of expr * expr
   | EApp of string * expr
   | EApp2 of string * expr * expr
@@ -41,6 +43,8 @@ let rec sexp_to_expr (se : Sexp.t) : expr =
     | List(sexps) ->
       match sexps with
         | [Atom("+"); arg1; arg2] -> EPlus(sexp_to_expr arg1, sexp_to_expr arg2)
+        | [Atom("-"); arg1; arg2] -> EMinus(sexp_to_expr arg1, sexp_to_expr arg2)
+        | [Atom("<"); arg1; arg2] -> ELess(sexp_to_expr arg1, sexp_to_expr arg2)
         | [Atom("=="); arg1; arg2] -> EEq(sexp_to_expr arg1, sexp_to_expr arg2)
         | [Atom("if"); arg1; arg2; arg3] ->
           EIf(sexp_to_expr arg1, sexp_to_expr arg2, sexp_to_expr arg3)
@@ -74,7 +78,7 @@ let parse (s : string) : prog =
   parse_program (Sexp.of_string s)
 
 let stackloc i = (i * 4)
-let stackval i = sprintf "[ebp - %d]" (stackloc i)
+let stackval i = sprintf "dword [ebp - %d]" (stackloc i)
 type tenv = (string * int) list
 
 let rec find (env : tenv) (x : string) : int option =
@@ -96,22 +100,25 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) =
   match e with
     | EApp2(name, arg1, arg2) ->
       let after_label = gen_tmp "after_call" in
-      let arg1is = e_to_is arg1 (si + 2) env in
-      let arg2is = e_to_is arg2 (si + 3) env in
+      let arg1is = e_to_is arg1 si env in
+      let arg2is = e_to_is arg2 (si + 1) env in
+      let init = [
+          "push ebp";
+          sprintf "push %s" after_label;
+        ] in
+      let after = [ sprintf "%s:" after_label; "pop ebp"] in
+      arg1is @ [ sprintf "mov %s, eax" (stackval si) ]  @
+      arg2is @ [ sprintf "mov %s, eax" (stackval (si + 1)) ] @
+      init @
       [
-        "push ebp";
-        sprintf "push %s" after_label;
-      ] @
-      arg1is @
-      [ "push eax"; ] @
-      arg2is @
-      [ "push eax";
+        sprintf "mov eax, %s" (stackval si); "push eax";
+        sprintf "mov eax, %s" (stackval (si + 1)); "push eax";
         "mov ebp, esp";
         "add ebp, 8";
         sprintf "jmp %s" name;
-        sprintf "%s:" after_label;
-        "pop ebp";
-      ]
+      ] @
+      after
+
     | EApp(name, arg) ->
       let after_label = gen_tmp "after_call" in
       let argis = e_to_is arg si env in
@@ -128,6 +135,27 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) =
     | ENum(i) -> [sprintf "mov eax, %d" i]
     | EBool(true) -> ["mov eax, 1"]
     | EBool(false) -> ["mov eax, 0"]
+    | ELess(e1, e2) ->
+      let e1is = e_to_is e1 si env in
+      let e2is = e_to_is e2 (si + 1) env in
+      e1is @
+      [sprintf "mov %s, eax" (stackval si)] @
+      e2is @
+      [sprintf "mov %s, eax" (stackval (si + 1));
+       sprintf "mov eax, %s" (stackval si);
+       sprintf "sub eax, %s" (stackval (si + 1));
+       sprintf "shr eax, 31"
+       ]
+    | EMinus(e1, e2) ->
+      let e1is = e_to_is e1 si env in
+      let e2is = e_to_is e2 (si + 1) env in
+      e1is @
+      [sprintf "mov %s, eax" (stackval si)] @
+      e2is @
+      [sprintf "mov %s, eax" (stackval (si + 1));
+       sprintf "mov eax, %s" (stackval si);
+       sprintf "sub eax, %s" (stackval (si + 1));
+       ]
     | EPlus(e1, e2) ->
       let e1is = e_to_is e1 si env in
       let e2is = e_to_is e2 (si + 1) env in
@@ -154,7 +182,7 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) =
       ]
     | EId(x) ->
       (match find env x with
-        | None -> failwith "Unbound id"
+        | None -> failwith ("Unbound id " ^ x)
         | Some(i) ->
           [sprintf "mov eax, [ebp - %d]" (stackloc i)])
     | ELet(x, v, body) ->
@@ -170,9 +198,9 @@ let rec e_to_is (e : expr) (si : int) (env : tenv) =
   sis @ [sprintf "mov %s, eax" (stackval (si + 1))] @
   [
     sprintf "mov eax, %s" (stackval si);
-    sprintf "mov [ebx], eax";
+    sprintf "mov dword [ebx], eax";
     sprintf "mov eax, %s" (stackval (si + 1));
-    sprintf "mov [ebx + 4], eax";
+    sprintf "mov dword [ebx + 4], eax";
     sprintf "mov eax, ebx";
     sprintf "add ebx, 8";
   ]
@@ -203,6 +231,8 @@ let rec stack_depth (e : expr) =
     | EId(_) -> 0
     | ELet(x, v, body) -> (max (stack_depth v) ((stack_depth body) + 1))
     | EPlus(lhs, rhs)
+    | EMinus(lhs, rhs)
+    | ELess(lhs, rhs)
     | EEq(lhs, rhs) -> (max (max (stack_depth lhs) ((stack_depth rhs) + 1)) 2)
     | EApp(name, arg) -> (max (stack_depth arg) 1)
     | EApp2(name, arg1, arg2) -> (max (max (stack_depth arg1) ((stack_depth arg2) + 1)) 2)
