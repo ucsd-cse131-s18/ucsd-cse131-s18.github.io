@@ -4,6 +4,8 @@ title: "Heap Allocation"
 doodle: "/doodle.png"
 ---
 
+_Code for these notes is at [https://github.com/ucsd-cse131-s18/ucsd-cse131-s18.github.io/lectures/05-07-mon/](https://github.com/ucsd-cse131-s18/ucsd-cse131-s18.github.io/lectures/05-07-mon/)_
+
 # Heap Allocation
 
 So far, we've seen a number of different, interesting uses of memory for
