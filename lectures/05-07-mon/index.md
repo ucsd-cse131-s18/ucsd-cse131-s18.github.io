@@ -4,7 +4,7 @@ title: "Heap Allocation"
 doodle: "/doodle.png"
 ---
 
-_Code for these notes is at [https://github.com/ucsd-cse131-s18/ucsd-cse131-s18.github.io/lectures/05-07-mon/](https://github.com/ucsd-cse131-s18/ucsd-cse131-s18.github.io/lectures/05-07-mon/)_
+_Code for these notes is at [https://github.com/ucsd-cse131-s18/ucsd-cse131-s18.github.io/tree/master/lectures/05-07-mon](https://github.com/ucsd-cse131-s18/ucsd-cse131-s18.github.io/tree/master/lectures/05-07-mon)_
 
 # Heap Allocation
 
@@ -129,7 +129,7 @@ We will set aside a special region of memory that exists for holding the
 contents of pairs, put pairs' elements there, and use addresses into that
 space to represent pair values, which are references to their contents.
 
-<img src="pair-rep.png" width=100%>
+![drawing](pair-rep.png)
 
 ## Representing the Heap
 
@@ -231,7 +231,7 @@ refer to the address of the first item, and for `EBX` to be moved forward by
 If we chose the second, we'd end up with our answer referring to the wrong
 word in memory – the word _past_ the end of the pair:
 
-<img src="pair-miss.png" width=100%>
+![drawing](pair-miss.png)
 
 We instead need to store the current address to `EAX` first, then add to the
 heap pointer.
