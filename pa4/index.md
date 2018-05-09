@@ -8,6 +8,8 @@ This assignment focuses on providing an introduction to tuples that will be impl
 You will implement two data structures — Binary Search Tree (BST) and List - through the use of tuples. You will be provided with one correct
 and several buggy compilers. By first writing a few data structures before actually implementing the language, this helps with testing your future tuple implemetation. Notice how this is now close to becoming a useful language. 
 
+See list of common issues: [FAQ](https://piazza.com/class/jfh8ukqgp5h521?cid=423)
+
 ## Language
 Diamondback builds on Cobra and adds support for tuples. The main addition to the language are the following:
 * tuple expressions
