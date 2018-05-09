@@ -1,0 +1,15 @@
+
+(def (point x y) (pair x y))
+
+(def (add p1 p2)
+    (point (+ (fst p1) (fst p2)) (+ (snd p1) (snd p2))))
+
+(def (gridDistance p1 p2)
+  (+ (absv (- (fst p1) (fst p2))) (absv (- (snd p1) (snd p2)))))
+(def (absv n) (if (< n 0) (- 0 n) n))
+
+(def (our_main _)
+    (let (p1 (point 1 3))
+      (let (p2 (point 2 9))
+        (let (origin (point 0 0))
+          (gridDistance origin (add p1 p2))))))
