@@ -176,4 +176,93 @@ return to this issue later.
 
 Now we can move on to compiling pairs, which will be responsible for
 evaluating two sub-expressions, putting the resulting two values on the heap,
-and putting the address of the start of those values into `EAX`.
+and putting the address of the start of those values into `EAX`. This is much
+like the evaluation of an operator like `+`, which has two sub-expressions,
+to start:
+
+```ocaml
+| EPair(f, s) ->
+  let fis = e_to_is f si env in
+  let sis = e_to_is s (si + 1) env in
+  fis @ [sprintf "mov %s, eax" (stackval si)] @
+  sis @ [sprintf "mov %s, eax" (stackval (si + 1))] @
+  [
+    ... to fill ...
+  ]
+```
+
+After this comes the new behavior. We need to move the values onto the heap
+somewhere. This needs to come with a crucial invariant that we will assume
+and maintain: **the current address in `EBX` is the next free word for
+allocation**. So we can put these two values into `EBX` and `EBX+4`:
+
+```ocaml
+    sprintf "mov eax, %s" (stackval si);
+    sprintf "mov [ebx], eax";
+    sprintf "mov eax, %s" (stackval (si + 1));
+    sprintf "mov [ebx + 4], eax";
+```
+
+It's important to realize that if we just generated this assembly, we'd have
+two remaining issues:
+
+- Now, `EBX` is referring to the address where we put the first value of the
+pair. Future allocations need to not write over that space! So, we need to
+increase `EBX` so that it refers to the next empty space.
+- We haven't specified what value this entire pair expression _evaluates to_.
+That is, we need the code to **get the answer into `EAX`**.
+
+It's important to do these two things in the right order! We need `EAX` to
+refer to the address of the first item, and for `EBX` to be moved forward by
+`8`. Which of the following two orders will accomplish this?
+
+- ```ocaml
+    "mov eax, ebx";
+    "add ebx, 8";
+  ```
+
+- ```ocaml
+    "add ebx, 8";
+    "mov eax, ebx";
+  ```
+
+If we chose the second, we'd end up with our answer referring to the wrong
+word in memory – the word _past_ the end of the pair:
+
+<img src="pair-miss.png" width=100%>
+
+We instead need to store the current address to `EAX` first, then add to the
+heap pointer.
+
+With this representation in mind, we can then directly use these addresses in
+the compilation of expressions that access the first and second elements of
+the pair. The `EFst` and `ESnd` instructions will rely on their expression
+evaluating to an _address_, which they will then dereference appropriately:
+
+```ocaml
+| EFst(e) ->
+  let tis = e_to_is e si env in
+  tis @ [ "mov eax, [eax]" ]
+| ESnd(e) ->
+  let tis = e_to_is e si env in
+  tis @ [ "mov eax, [eax + 4]" ]
+```
+
+This completes the basics of compiling pairs and pair access, relying on a
+new _heap pointer_ in `EBX`, a new heap space allocated by `main.c`, and pair
+values represented by addresses in heap space containing pair contents.
+
+## Going Further
+
+There are a few questions remaining for you to consider going forward:
+
+- If we wanted to detect errors, like using `fst` on a number value, we'd
+need to consider the difference in tags between pair values (references) and
+number values.
+- What should happen when we print pairs? If we make nested pairs, how does
+this change the implementation of print?
+- What happens when we check pairs for equality with one another? Should we
+check if they are at the same address, or check their contents?
+- What other kinds of heap-allocated values would be interesting to
+implement? What other representation or expressions would we need, or would
+be useful, in order to generalize to tuples of arbitrary length?
