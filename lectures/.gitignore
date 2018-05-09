@@ -1,0 +1,5 @@
+*.int
+*.dSYM
+*.s
+*.class
+*.out
