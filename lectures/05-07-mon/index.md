@@ -127,7 +127,7 @@ We will set aside a special region of memory that exists for holding the
 contents of pairs, put pairs' elements there, and use addresses into that
 space to represent pair values, which are references to their contents.
 
-![A pair](pair-rep.png)
+<img src="pair-rep.png" width=100%>
 
 ## Representing the Heap
 
