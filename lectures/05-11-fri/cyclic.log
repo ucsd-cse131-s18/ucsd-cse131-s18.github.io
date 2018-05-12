@@ -1,0 +1,52 @@
+❱ python
+Python 2.7.10 (default, Oct  6 2017, 22:29:07)
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> origin = [0, 0]
+>>> another_origin = [0, 0]
+>>> origin == another_origin
+True
+>>> origin is another_origin
+False
+>>> origin[0] = 10
+>>> origin
+[10, 0]
+>>> origin == another_origin
+False
+>>> origin2 = origin
+>>> origin2 is origin
+True
+>>> origin[1] = 100
+>>> origin2 is origin
+True
+>>> origin[1] = origin
+>>> origin # A: :-)   B: Error
+[10, [...]]
+>>> origin[1]
+[10, [...]]
+>>> origin[1][1]
+[10, [...]]
+>>> origin[1][1][1]
+[10, [...]]
+>>> origin == another_origin # A: True B: False
+False
+>>> another_origin[0] = 10
+>>> another_origin[1] = origin
+>>> origin == another_origin # A: True B: False C: Err
+True
+>>> origin3 = [10, 0]
+>>> origin3[1] = origin3
+>>> origin3
+[10, [...]]
+>>> origin == origin3 # A: True B: False C: Err
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+RuntimeError: maximum recursion depth exceeded in cmp
+>>> origin3 = 20
+>>> origin3 = [10, 0]
+>>> origin3 = [20, 0]
+>>> origin3[1] = origin3
+>>> origin == origin3 # A: True B: False C: Err
+False
+>>>
