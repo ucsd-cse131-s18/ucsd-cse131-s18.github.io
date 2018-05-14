@@ -52,8 +52,8 @@ The corresponding abstract syntax extension is a direct mapping in this case:
 ```ocaml
 type expr = ...
      | EPair of expr * expr
-     | EFst of expr * expr
-     | ESnd of expr * expr
+     | EFst of expr
+     | ESnd of expr
 ```
 
 Pairs on their own are a powerful feature. We can use them to represent lists
