@@ -48,7 +48,7 @@ In Boa, the course staff decided on a number of cases could cause errors –
 the conditional part of ifs, mixing booleans and numbers in operators,
 parsing user input, checking for overflow, and so on. Choose one such error
 from Boa, and design behavior that it should have _other_ than producing an
-error. For each:
+error:
 
 - Describe the non-erroneous behavior
 - Summarize how you would change the implementation to accommodate the new
