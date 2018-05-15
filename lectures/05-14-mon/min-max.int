@@ -1,0 +1,26 @@
+(def (max l sofar)
+  (if (== l false) sofar
+      (let (val (fst l))
+        (let (rest (snd l))
+          (if (< val sofar)
+              (max rest sofar)
+              (max rest val))))))
+(def (min l sofar)
+  (if (== l false) sofar
+      (let (val (fst l))
+        (let (rest (snd l))
+          (if (< sofar val)
+              (min rest sofar)
+              (min rest val))))))
+(def (maxmin l)
+  (pair (min l 10000) (max l 0)))
+(def (read_maxmin _)
+  (let (line (read_line))
+    (if (== line false) false
+        (maxmin line))))
+(def (our_main so_far)
+  (let (next (print (read_maxmin false)))
+    (if (== next false)
+      so_far
+      (let (updated (print (pair next so_far)))
+        (our_main updated)))))
