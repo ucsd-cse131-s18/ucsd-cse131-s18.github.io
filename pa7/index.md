@@ -85,8 +85,8 @@ code:
       allocated without GC)
     - `bytes_needed`: the number of _bytes_ that the runtime is trying to
       allocate
-    - `first_frame`: the current value of ESP
-    - `stack_top`: the current value of EBP
+    - `first_frame`: the current value of EBP
+    - `stack_top`: the current value of ESP
 
 2. Then expects that `try_gc` either:
    - Makes enough space for the value (via the algorithm described below), and
