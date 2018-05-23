@@ -4,14 +4,10 @@ title: "PA7 – Garter"
 doodle: "https://camo.githubusercontent.com/e4551b88fb523b4897537330aa769e69d1410834/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f372f37362f436f6173745f4761727465725f536e616b652e6a70672f3139323070782d436f6173745f4761727465725f536e616b652e6a7067"
 ---
 
-# Garter
+# PA7 –– Garter (Closed Collaboration)
 
 The Garter language manages its memory automatically.  You will implement the
 automated memory management.
-
-A heads up – there aren't a ton of lines of code needed to complete this. I
-wrote around 250 lines in `gc.c`. Both `gdb` and judicious debugging with
-`printf` are your friends here.
 
 Classroom link: https://classroom.github.com/a/w8o9VjGI
 
@@ -372,6 +368,13 @@ most recent BST is used at any point in time.
 Draw pictures, check if the pictures you're drawing line up with what you're
 seeing when you print the heap and when you use a debugger, and do your best
 to work incrementally.
+
+A heads up that there aren't a ton of lines of code needed to complete this.
+We wrote around 250 lines in `gc.c`. You will have to think a lot about the
+lines you write, but if you find yourself reaching into many hundreds of
+lines, you may want to go back to design rather than trying to push forward
+with a start that won't work.
+
 
 ## FAQ from previous years
 
