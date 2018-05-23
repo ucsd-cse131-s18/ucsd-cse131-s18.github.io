@@ -11,7 +11,7 @@ automated memory management.
 
 Classroom link: https://classroom.github.com/a/w8o9VjGI
 
-It is due by 11:59pm on Wednesday, May 30.
+It is due by 11:59pm on Thursday, May 31.
 
 ## Language
 
@@ -237,6 +237,12 @@ tgcerr_main "gctest" 8 "(tup 1 (tup 3 (tup 4 5)))" "out of memory"
 
 The size of the heap is 100000 words by default.
 
+You can add these in `test.ml` and run with `make test` and `./test`.
+
+Note that you'll need to run from `ieng6`, because we are providing the
+compiler as a black-box binary that generates assembly code (much like PA4
+and PA6).
+
 **Printing** – There's a helper, `print_mem`, defined for you in `gc.c`
 that takes an array and a number of elements to print, and prints them one per
 line like so:
@@ -262,7 +268,7 @@ While automated testing and a debugger are both invaluable, sometimes there's
 just no substitute for pretty-printing the heap after each phase in a
 complicated test!
 
-## TODO
+## Getting Started
 
 Familiarize yourself with `gc.c` and the call to it from `main.c`. Then write
 a small test; in `input/small.garter`, write:
