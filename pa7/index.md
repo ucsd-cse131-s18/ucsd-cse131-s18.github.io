@@ -11,6 +11,8 @@ automated memory management.
 
 Classroom link: https://classroom.github.com/a/w8o9VjGI
 
+It is due by 11:59pm on Wednesday, May 30.
+
 ## Language
 
 Garter (the language) is much the same as Diamondback, with some additions:
