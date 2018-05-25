@@ -158,13 +158,13 @@ ebp ->  [return address     ]   <- first_frame
         [arg 1              ]
         [arg 2              ]
         [...                ]
-        [arg N              ]
+        [arg N              ]   <- STACK_BOTTOM
         [return address     ]
         [prev ebp value     ]
         ---------------------
         [ret ptr to main    ]
         [value of input     ]
-        [value of heap start] <- STACK_BOTTOM
+        [value of heap start] 
 ```
 
 Two key things to note:
