@@ -391,6 +391,10 @@ with a start that won't work.
 A. We evaluate the elements of the tuple before trying to allocate space for the
 resulting pair, and evaluate the elements left-to-right.
 
+_Update_: See this Piazza post for more details on this:
+
+https://piazza.com/class/jfh8ukqgp5h521?cid=623
+
 **Q. Can I use a file to store the program of a test case ?**
 
 A. Yes, write your program in `input/<filename>.garter` and in `myTests.ml`
