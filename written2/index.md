@@ -167,10 +167,10 @@ In the first program, the overflow error would result. In the second, the
 not-a-boolean error would result. It was critical that the new temporary
 variables were inserted precisely where they were.
 
-Answer the questions below.  For this problem, assume that CSE applies only
-when the same operator expression appears more than once in a function body,
-and only to operator expressions that have booleans, numbers, and identifiers
-as operands.
+Answer the questions below.  For this problem, assume that common subexpression
+elimination (CSE) applies only when the same operator expression appears more
+than once in a function body, and only to operator expressions that have
+booleans, numbers, and identifiers as operands.
 
 - Are there principled changes to the language we could make that would make it
   easier to not change the program's behavior with this optimization? Hint:
