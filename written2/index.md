@@ -105,8 +105,8 @@ program should evaluate to the tuple value `(2,3)`:
 
 ## Common Subexpression Elimination
 
-In class and lab, we discussed constant propagation: an optimization that
-substitutes constants into other expressions to save on variable space.
+In class, we discussed constant propagation: an optimization that substitutes
+constants into other expressions to save on variable space.
 
 A related optimization is called common subexpression elimination. In some
 ways, it's the dual of constant propagation.
