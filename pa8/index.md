@@ -1,6 +1,8 @@
-
-
-![A sharp-nosed viper](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sharp-Nosed_Viper_01.jpg/1920px-Sharp-Nosed_Viper_01.jpg)
+---
+layout: page
+title: "PA8 – Garter"
+doodle: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sharp-Nosed_Viper_01.jpg/1920px-Sharp-Nosed_Viper_01.jpg"
+---
 
 > The popular name “hundred pacer” refers to a local belief that,
 > after being bitten, the victim will only be able to walk 100 steps
