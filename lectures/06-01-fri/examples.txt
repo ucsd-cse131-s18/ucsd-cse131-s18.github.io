@@ -1,0 +1,56 @@
+
+
+
+
+  (def (sum   t                         )
+    (let ((total 0) (i 0))
+      (begin
+        (while (<= i (tup-len t))
+          (begin
+            (total := (+ total (tup-get t 0)))
+            (i := (+ i 1))))
+        total)))
+
+
+
+  (def (abs_value   x        )
+
+    (if x x (* x -1)))
+
+
+
+
+  (def (abs_value_fixed    x              )
+
+    (if (> x 0) x (* x -1)))
+
+  (def (use_abs_value _)
+    (abs_value_fixed true))
+
+
+
+
+  (def (upto    n                 )
+    (if (== n 0)
+        false
+        (+ n (upto (- n 1)))))
+
+
+
+  (def (abs_value_fixed x : number) : number
+
+    (if (> x 0) x (* x -1)))
+
+  (def (our_main input :                  )
+
+    (abs_value_fixed input))
+
+
+
+
+  (def (sum-list    l                   )
+    (if (== l false) 0
+        (+ (tup-get l 0) (sum-list (tup-get l 1)))))
+
+
+
