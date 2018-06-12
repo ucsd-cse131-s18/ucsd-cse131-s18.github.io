@@ -1,0 +1,31 @@
+>>> def twoxsquared(x):
+...   return 2 * x * x
+...
+>>> twoxsquared(5)
+50
+>>> def dtwoxsquared_dx(x):
+...   return 4 * x
+...
+>>> def d_dx(f):
+...   def deriv(x): return (f(x + 0.001) - f(x)) / 0.001
+...   return deriv
+...
+>>> d2x2_dx2 = d_dx(twoxsquared)
+>>> dtwoxsquared_dx(5)
+20
+>>> d2x2_dx2(5)
+20.002000000005182
+>>> def one_over_x(x): return 1 / x
+...
+>>> done_over_x_dx = d_dx(one_over_x)
+>>> done_over_x_dx(9)
+111.09876680368849
+>>> d2x2_dx2
+<function deriv at 0x101815d70>
+>>> done_over_x_dx
+<function deriv at 0x10181a500>
+>>> d2x2_dx2(5)
+20.002000000005182
+>>> done_over_x_dx(9)
+111.09876680368849
+
